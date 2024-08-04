@@ -1,0 +1,1 @@
+In this repositry i have created a loan calculator using HTML, CSS and JAVASCRIPT. You have to add the loan amount, interset rate and time you required in months to repay the loan then the monthly payment will be shown
