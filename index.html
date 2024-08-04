@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Claculator</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Loan Calculator</h1>
+        <form id="loanForm">
+            <div class="form-group">
+                <label for="amount">Loan Amount:</label><br>
+                <input onchange="calculateLoan()" type="number" id="loan-amount" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Interest Rate (%):</label><br>
+                <input onchange="calculateLoan()" type="number" id="interestRate" min="0"  required>
+            </div>
+            <div class="form-group">
+                <label for="loanDuration">Months to pay:</label><br>
+                <input onchange="calculateLoan()" type="number" id="months-to-pay" required>
+            </div>
+            <p class="payment">Monthly Payment:</p>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
