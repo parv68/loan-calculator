@@ -5,6 +5,8 @@ function calculateLoan(){
 
     interset = (loanAmountValue * (interestRateValue * 0.01)) / monthsToPayValue
     monthlyPayment = (loanAmountValue / monthsToPayValue + interset).toFixed(2)
-    document.querySelector('.payment').innerHTML =
+    totalPayment = (monthlyPayment * monthsToPayValue).toFixed(2);
+    document.querySelector('.monthly-payment').innerHTML =
     `Monthly Payment: ${monthlyPayment}`
+    document.querySelector('.total-payment').innerHTML = `Total Payment: ${totalPayment}`
 }
